@@ -1,128 +1,89 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-    <title>Our Love Story</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-        @font-face {
-            font-family: digit;
-            src: url('digital-7_mono.ttf') format("truetype");
-        }
-    </style>
-    <link href="css/default.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="google" value="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Come and party with Pablo the Flamingo! Whatever you do, don't stop the music... Made by Nathan Gordon and art directed by Pascal Van Der Haar. Illustration by Jono Yuen. Built on MatterJs, ThreeJs and GSAP." />
+    <meta name="keywords" content="Pablo the Flamingo, Nathan Gordon, Pascal Van Der Haar, gordonnl, pascalsetsail, Pablo, Flamingo, Matterjs, Threejs, GSAP" />
+
+    <meta name="author" content="Nathan Gordon and Pascal Van Der Haar" />
+    <meta name="copyright" content="2014" />
+    <meta name="application-name" content="Pablo the Flamingo" />
+
+    <meta property="og:title" content="Pablo the Flamingo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://pablotheflamingo.com/assets/img/img-share.jpg" />
+    <meta property="og:url" content="http://pablotheflamingo.com/" />
+    <meta property="og:description" content="Come and party with Pablo the Flamingo! Whatever you do, don't stop the music... Made by Nathan Gordon and art directed by Pascal Van Der Haar. Illustration by Jono Yuen. Built on MatterJs, ThreeJs and GSAP." />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@gordonnl">
+    <meta name="twitter:title" content="Pablo the Flamingo">
+    <meta name="twitter:description" content="Come and party with Pablo the Flamingo! Whatever you do, don't stop the music... Made by Nathan Gordon and art directed by Pascal Van Der Haar. Illustration by Jono Yuen. Built on MatterJs, ThreeJs and GSAP.">
+    <meta name="twitter:image:src" content="http://pablotheflamingo.com/assets/img/img-share.jpg">
+
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+    <link href="assets/css/style.css" rel="stylesheet" media="screen" />
+
+    <script src="assets/js/lib/modernizr.custom.js"></script>
+    <script src="assets/js/lib/detectizr.min.js"></script>
 </head>
 
 <body>
-    <div id="mainDiv">
-        <div id="content">
-            <div id="code">
-                <span class="comments"><a href="./html/photo.html">于安航</a></span><br />
-
-                <span class="space" /><span class="comments">爱，要么不开始，要么一辈子。</span><br />
-                <span class="space" /><span class="comments">* 愿无岁月可回首</span><br />
-                <span class="space" /><span class="comments">* 且以深情共白头</span><br /> =<span class="keyword">=============</a></span><span class="string"></span><br />=<span class="keyword">=============</span><span class="string"></span><br />
-                <span class="comments"> 2016年6月18日我们第一次见面 </span><br /> 第一次见到你就知道我栽了.
-                <br />
-                <span class="comments"> 好像突然有了铠甲，也突然有了软肋</span><br /> 说不清为什么爱你.
-                <br />
-                <span class="comments"> 但你就是我不爱别人的理由</span><br /> 2016年12月29日我们走到了一起.
-                <br />
-                <span class="comments"> 今后的日子都是你.</span><br />
-                <span class="comments"> 一颗心不大的地方有许多许多你.</span><br />
-                <span class="comments"> 明天的电话里依然是我想你.</span><br />
-                <span class="keyword">我愿意舍弃一切 </span> <span class="keyword"> </span><br />
-                <span class="keyword">以想念你终此一生 </span> <br />
-                <span class="placeholder" /><br />
-                <!-- <span class="placeholder" /><span class="comments"></span><br /> -->
-                <span class="placeholder" /><span class="comments">山有木兮卿有意</span><br />
-                <span class="placeholder" />昨夜星辰恰似你<br />
-
-                <span class="comments">After a romantic wedding, we will live happily ever after.</span><br />
-                <br /><span class="comments" style="float: right">--李鹏飞</span>
-                <br />
+    <div class="scene">
+        <img class="logo" src="assets/img/img-logo.png">
+        <nav>
+            <div class="prompt mute-prompt">
+                <div class="button icons">&#xe002;</div>
+                <span class="label">Sound | on</span>
             </div>
-            <div id="loveHeart">
-                <canvas id="garden"></canvas>
-                <div id="words">
-                    <div id="messages">
-                        安航, 在我心里住了这么久
-                        <div id="elapseClock"></div>
-                    </div>
-                    <div id="loveu">
-                        Love u forever and ever.<br />
-                        <div class="signature">- Liper</div>
-                    </div>
-                </div>
+            <!-- <div class="prompt share-prompt">
+                <a class="network twitter icons" target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fpablotheflamingo.com%2F&text=Pablo%20the%20Flamingo%20just%20blew%20my%20mind!">&#xe004;</a>
+                <a class="network facebook icons" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpablotheflamingo.com%2F">&#xe005;</a>
+                <div class="button icons">&#xe001;</div>
+                <span class="label">Share Pablo</span>
             </div>
-        </div>
+            <a class="prompt adopt-prompt" href="http://wwf.to/WRoivm" target="_blank">
+                <div class="button icons">&#xe000;</div>
+                <span class="label">Adopt a Flamingo</span>
+            </a> -->
+        </nav>
     </div>
-    <script type="text/javascript">
-        var offsetX = $("#loveHeart").width() / 2;
-
-        var offsetY = $("#loveHeart").height() / 2 - 55;
-
-        var together = new Date();
-
-        together.setFullYear(2016, 6, 18);
-
-        together.setHours(10);
-
-        together.setMinutes(0);
-
-        together.setSeconds(0);
-
-        together.setMilliseconds(0);
-
-
-
-        if (!document.createElement('canvas').getContext) {
-
-            var msg = document.createElement("div");
-
-            msg.id = "errorMsg";
-
-            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-
-            document.body.appendChild(msg);
-
-            $("#code").css("display", "none")
-
-            $("#copyright").css("position", "absolute");
-
-            $("#copyright").css("bottom", "10px");
-
-            document.execCommand("stop");
-
-        } else {
-
-            setTimeout(function() {
-
-                startHeartAnimation();
-
-            }, 5000);
-
-
-
-            timeElapse(together);
-
-            setInterval(function() {
-
-                timeElapse(together);
-
-            }, 500);
-
-
-
-            adjustCodePosition();
-
-            $("#code").typewriter();
-
-        }
-    </script>
+    <div class="loading">
+        <div class="mask">
+            <img class="intro-logo" src="assets/img/img-logo.png">
+            <img class="egg" src="assets/img/img-egg.png">
+            <img class="egg-shadow" src="assets/img/img-egg_shadow.png">
+        </div>
+        <div class="load-mobile-prompt">Touch to start!</div>
+        <div class="load-progress">Turn up your sound...
+            <div class="red">Turn up your sound...</div>
+        </div>
+        <img class="loader" src="assets/img/img-loader.png">
+    </div>
+    <div class="scripts">
+        <script data-main="assets/js/app.js?v=0.3" src="assets/js/lib/require.js"></script>
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-34845197-5', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </div>
 </body>
 
 </html>
